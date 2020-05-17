@@ -1,0 +1,17 @@
+n=int(input("enter the house number="))
+list1=[]
+for i in range(n):
+    z=int(input("enter the value of houses="))
+    list1.append(z)
+x=list1[0]
+if(n==1):
+    print(x)
+y=max(list1[0],list1[1])
+if(n==2):
+    print(y)
+for i in range(2,n):
+    m=max(list1[i]+x,y)
+    x=y
+    y=m
+print(m)
+
